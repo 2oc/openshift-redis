@@ -15,4 +15,4 @@ LABEL io.k8s.description="Redis" \
       io.openshift.tags="redis" \
       io.openshift.min-memory="1Gi" \
       io.openshift.min-cpu="1" \
-      io.openshift.non-scalable="false"
+      io.openshift.non-scalable="true"
