@@ -9,10 +9,10 @@ EXPOSE 6379
 CMD [ "/usr/local/bin/redis-server", "/usr/local/etc/redis/redis.conf" ]
 
 # Set labels used in OpenShift to describe the builder images
-LABEL io.k8s.description="Redis" \
-      io.k8s.display-name="Redis Alpine" \
-      io.openshift.expose-services="6379:tcp" \
-      io.openshift.tags="redis" \
-      io.openshift.min-memory="1Gi" \
-      io.openshift.min-cpu="1" \
-      io.openshift.non-scalable="true"
+LABEL io.k8s.description                Redis
+LABEL io.openshift.tags                 redis
+LABEL io.k8s.display-name               Redis Alpine
+LABEL io.openshift.expose-services      6379
+LABEL io.openshift.non-scalable         true
+#LABEL io.openshift.min-memory           8Gi
+#LABEL io.openshift.min-cpu              4
