@@ -1,0 +1,31 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: uRe
+    labels:
+      app: redis
+    name: redis
+  spec:
+    output:
+      to:
+        kind: ImageStreamTag
+        name: openshift-redis:latest
+    resources: {}
+    source:
+      git:
+        ref: master
+        uri: https://github.com/ure/openshift-redis.git
+      type: Git
+    strategy:
+      dockerStrategy:
+        from:
+          kind: ImageStreamTag
+          name: redis:alpine
+      type: Docker
+  status:
+    lastVersion: 0
+kind: List
+metadata: {}
