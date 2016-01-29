@@ -27,7 +27,7 @@ spec:
       output:
         to:
           kind: ImageStreamTag
-          name: openshift-redis:latest
+          name: redis:latest
       resources: {}
       source:
         git:
