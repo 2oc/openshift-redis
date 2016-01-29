@@ -14,5 +14,5 @@ LABEL io.openshift.tags                 redis
 LABEL io.k8s.display-name               Redis Alpine
 LABEL io.openshift.expose-services      6379
 LABEL io.openshift.non-scalable         true
-#LABEL io.openshift.min-memory           8Gi
-#LABEL io.openshift.min-cpu              4
+#LABEL io.openshift.min-memory          8Gi
+#LABEL io.openshift.min-cpu             4
