@@ -7,7 +7,6 @@ USER 997
 EXPOSE 6379
 
 CMD [ "/usr/local/bin/redis-server", "/usr/local/etc/redis/redis.conf" ]
-#CMD sleep 10h
 
 # Set labels used in OpenShift to describe the builder images
 LABEL io.k8s.description="Redis" \
