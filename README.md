@@ -7,5 +7,5 @@ Template for running a mojolicious container.
 You need oc (cli tool) locally installed
 
 ```sh
-> oc new-app https://github.com/ure/openshift-redis.git
+> oc new-app https://github.com/ure/openshift-redis.git --name=redis
 ```
